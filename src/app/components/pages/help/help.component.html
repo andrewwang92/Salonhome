@@ -1,0 +1,35 @@
+<div class="wow fadeIn" data-wow-duration="2000">
+	<section class="top-section">
+		<div class="container">
+			<div class="row">
+				<div class="title wow fadeInUp">
+					<h2 class="text-center"><span><b class="theme_color">Help</b></span></h2>
+				</div>
+			</div>
+
+		
+			<div class="panel-group" [id]="'accordion'+i" (click)="toggleShowDiv(i)" *ngFor="let post of help_posts; let i = index;">
+	
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" [attr.data-parent]="'#accordion'+i" [href]="'#collapse'+i" [attr.aria-expanded]="(currentIndex === i)?true:false"><b [innerHTML]='post.title.rendered'></b>
+							</a>
+						</h4>
+					</div>
+					<div *ngIf="currentIndex === i" [id]="'collapse'+i" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div *ngFor="let qa of post.acf.questionanswers">
+
+							<div class="scroll"><b><p [innerHTML]='qa.question'></p></b>
+							<p [innerHTML]='qa.answer'></p></div>
+	
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+
+
+</div></section>

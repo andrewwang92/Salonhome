@@ -1,0 +1,36 @@
+<div class="wow fadeIn" data-wow-duration="2000" >
+	<div class="top-section">
+		<div class="container">
+
+			<section class="row">
+				<div class="col-md-12">
+					<div class="title mb60 wow fadeInUp">
+						<h2 class="text-center"><b class="theme_color">RESULT OF SEARCH</b></h2>
+					</div>
+				</div>
+			</section>
+			<div class="row">
+				<div class="col-md-8">
+					<div *ngFor="let post of result_posts">
+						<div class="col-xs-12 col-md-12 col-sm-6 single-post-2 mb70 wow fadeInUp" data-wow-delay="0.1s" >
+							<article id="post-{{post.id}}" class="box">
+								<a [routerLink]="['/magazine', post.slug]" class="slash-hover"><img src="{{post.better_featured_image.source_url}}" alt="{{post.title.rendered}}" class="img-responsive ease photo" /></a>
+								<div class="description">
+									<h3 class="entry-title post-title color-inherit ease mt20 mb20"><a [routerLink]="['/magazine', post.slug]">{{post.title.rendered}}</a></h3>
+									<time class="date entry-meta mb10"><i class="fa fa-clock-o" aria-hidden="true"></i> {{post.date_gmt | date: 'longDate'}}</time>
+									<div class="description-post mb20" [innerHTML]="post.excerpt.rendered">
+								</div>
+								<a class="btn theme_btn style_outlined" [routerLink]="['/magazine', post.slug]">Read More</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<span *ngIf="!result_posts">Loading list...</span>
+				</div>
+				<div class="col-md-4">
+					<app-magazine-recent></app-magazine-recent>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

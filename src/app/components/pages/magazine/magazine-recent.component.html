@@ -1,0 +1,23 @@
+<!-- <section class="search_bar mb40 wow fadeInUp"  data-wow-delay="0.2s">
+	<h4 class="type2-title mt10 mb30">News and Publications</h4>
+	<div class="search-form">
+		<input type="search" 
+			(keyup.enter)="searchPost(search_post.value)" 
+			#search_post 
+			id="search-post" class="search-field" placeholder="Search …" value="" name="s">
+		<a href="javascript:;" class="search-submit" (click)="searchPost(search_post.value)">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</a>
+	</div>
+</section> -->
+
+<section class="recent_post mb40 wow">
+	<h4 class="type2-title mb30">Recent Post</h4>
+	<div *ngFor="let post of magazine_posts | slice:0:5;">
+		<article id="post-recent-{{post.id}}" class="article-recent">
+			<img width="65" height="65" class="img-post" src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" alt="{{post.title.rendered}}"/>
+			<h5 class="entry-title-min post-title color-inherit ease mt20 mb20"><a [routerLink]="['/magazine', post.slug]">{{post.title.rendered | slice:0:68}}</a></h5>
+			<div class="excerpt-post mb20" [innerHTML]="post.excerpt.rendered | slice:0:60"></div>
+		</article>
+	</div>
+</section>

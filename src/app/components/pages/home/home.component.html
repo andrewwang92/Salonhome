@@ -1,0 +1,493 @@
+<header id="header" class="valign_wrapper wow fadeIn content-banner-home-header" data-backstretch data-backstretch-duration="4000" data-backstretch-fade="1">
+	<div class="container">
+		<div class="row">
+			<section id="home" class="mb0" >
+				<div class="container banner-home-header">
+					<div class="row layer-background banner-web" style="background-image:url(assets/images/banner-home.jpg);background-position: top left;background-repeat: no-repeat;background-size: cover;" role="img">
+						<div class="col-md-8 container-left photofront">
+							<p class="c_white"><strong class="bit-letter">Join Thousands    of Professionals<br>Getting Booked Everyday</strong></p>
+							<span class="big-letter-1">List Services & Get Booked</span>						
+						</div> 
+						<div class="col-md-8 mt--15">				
+							<div class="col-sm-1 mb-0">
+								<a id="join-beta-3" class="btn br2 text-normal size-medium btn-white mb20" [routerLink]="['/download']" target="_blank">Get SalonHome</a>							
+							</div>
+						</div>
+						<div class="col-md-8 text-get-banner">										
+							<span class="c_white f_min mt20">Get your FREE account</span>
+						</div>  
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div class="container mt50 mb40">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title mb30">
+					<h2 class="mb0"><b>Discover Professionals</b></h2>
+				</div>
+				<div class="col-sm-12 p0">
+					<div class="row">
+						<a [routerLink]="['/services-hair']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/hair-miniatura.jpg);">
+									<div class="description">Hair</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-barbers']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/img_barber_salon_home.jpg);">
+									<div class="description">Barber</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-nail']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/nails-miniatura.jpg);">
+									<div class="description">Nail</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-makeup']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/profesional-makeup.jpg);">
+									<div class="description">Makeup</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-massage']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/massage-miniatura.jpg);">
+									<div class="description">Massage</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-skin']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/spa-miniatura.jpg);">
+									<div class="description">Spa</div>
+								</div>
+							</div>
+						</a>
+						<a [routerLink]="['/services-available-spaces']">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="module-box-left" style="background-image:url(assets/images/listing/img_events_salon_home.jpg);">
+									<div class="description">Space Rental</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container mt50 banner-pro">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title mb30">
+					<h2 class="mb0"><b><br class="display_responsive"/>SalonHome PRO <span class="label_top_blue">PRO</span></b></h2>
+				</div>
+				<div class="col-sm-12 mb10 p0 layer-background" style="background-image:url(assets/images/listing/banner-salon-home-pro.jpg);background-position: center top;background-repeat: no-repeat;padding: 50px;" role="img">
+					<p class="mt40 mb30" style="font-size: 20px;">
+						A new way to reach new clients. <br />
+						Unlock new opportunities for your business <br />
+						by upgrading to a SalonHome PRO account
+					</p>
+					<a [routerLink]="['/how-it-works-professionals']" class="btn theme_btn br2 text-normal size-medium">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="listing-modules">
+	<div class="container mt50">
+		<div class="row mb20">
+			<div class="col-md-12">
+				<div class="title">
+					<h2 class="mb0"><b>Hair Stylist </b></h2>
+				</div>
+				<div class="col-sm-12 mb10 p0">
+					<p class="paragraph_3 mb0">Book experienced hair stylists in your area</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="version2" class="row tab-pane team_layout2 pb15">
+			<div class="text-center">
+				<div class="col-md-12 p0 content-carousel">
+					<div  class="swiper-container carousel" [swiper]="slideConfig" (init)="swiperInit($event)" (reachEnd)="swiperReachEnd($event)" (reachBeginning)="swiperReachBeginning($event)" (slideChange)="swiperSlideChange($event)">
+  						<div class="swiper-wrapper">
+							<div *ngFor="let slide of HairStylist" class="swiper-slide slide">
+
+								<div class="col-md-12 team-block">
+									<img class="img img-responsive" src="{{ slide.img }}" alt="team4" width="270" height="278" alt="{{ slide.title }} - Hair Stylist" />
+									<div class="team-desc text-left">
+										<div class="team-name text-left mb5"><h3 class="mb0">{{ slide.title }}</h3></div>
+										<div class="rating mb5">
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star" *ngIf="slide.stars != '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '4'"></i>
+											<i class="i-starm" *ngIf="slide.stars == '4.5'"></i>
+											<i class="i-star" *ngIf="slide.stars == '5'"></i>
+											<span class="qty_reviews f_open color-primary">{{ slide.reviews }} Reviews</span>
+										</div>
+										<div class="team-position">
+											<p style="text-align: justify;">{{ slide.description }}</p>
+											<p class="f_open" *ngIf="slide.price?.length > 0" >{{ slide.price }}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="listing-modules">
+	<div class="container">
+		<div class="row mb20">
+			<div class="col-md-12">
+				<div class="title">
+					<h2 class="mb0"><b>Barbers</b></h2>
+				</div>
+				<div class="col-sm-12 mb10 p0">
+					<p class="paragraph_3 mb0">Book experienced barbers in your area</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="version2" class="row tab-pane team_layout2 pb15">
+			<div class="text-center">
+				<div class="col-md-12 p0 content-carousel">
+					<div id="version2" class="row tab-pane team_layout2 pb15">
+						<div class="text-center">
+							<div class="col-md-12 p0 content-carousel">
+								<div  class="swiper-container carousel" [swiper]="slideConfig" (init)="swiperInit($event)" (reachEnd)="swiperReachEnd($event)" (reachBeginning)="swiperReachBeginning($event)" (slideChange)="swiperSlideChange($event)">
+									<div class="swiper-wrapper">
+										<div *ngFor="let slide of Barbers" class="swiper-slide slide">
+
+											<div class="col-md-12 team-block">
+												<img class="img img-responsive" src="{{ slide.img }}" alt="team4" width="270" height="278" alt="{{ slide.title }} - Barbers" />
+												<div class="team-desc text-left">
+													<div class="team-name text-left mb5"><h3 class="mb0">{{ slide.title }}</h3></div>
+													<div class="rating mb5">
+														<i class="i-star"></i>
+														<i class="i-star"></i>
+														<i class="i-star"></i>
+														<i class="i-star" *ngIf="slide.stars != '3'"></i>
+														<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+														<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+														<i class="i-starg" *ngIf="slide.stars == '4'"></i>
+														<i class="i-starm" *ngIf="slide.stars == '4.5'"></i>
+														<i class="i-star" *ngIf="slide.stars == '5'"></i>
+														<span class="qty_reviews f_open color-primary">{{ slide.reviews }} Reviews</span>
+													</div>
+													<div class="team-position">
+														<p style="text-align: justify;">{{ slide.description }}</p>
+														<p class="f_open" *ngIf="slide.price?.length > 0" >{{ slide.price }}</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="listing-modules">
+	<div class="container">
+		<div class="row mb20">
+			<div class="col-md-12">
+				<div class="title">
+					<h2 class="mb0"><b>Massage Therapist</b></h2>
+				</div>
+				<div class="col-sm-12 mb10 p0">
+					<p class="paragraph_3 mb0">Book experienced massage therapists in your area</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="version2" class="row tab-pane team_layout2 pb15">
+			<div class="text-center">
+				<div class="col-md-12 p0 content-carousel">
+					<div  class="swiper-container carousel" [swiper]="slideConfig" (init)="swiperInit($event)" (reachEnd)="swiperReachEnd($event)" (reachBeginning)="swiperReachBeginning($event)" (slideChange)="swiperSlideChange($event)">
+  						<div class="swiper-wrapper">
+							<div *ngFor="let slide of MassageTherapist" class="swiper-slide slide">
+								<div class="col-md-12 team-block">
+									<img class="img img-responsive" src="{{ slide.img }}" alt="team4" width="270" height="278" alt="{{ slide.title }} - Massage Therapist" />
+									<div class="team-desc text-left">
+										<div class="team-name text-left mb5"><h3 class="mb0">{{ slide.title }}</h3></div>
+										<div class="rating mb5">
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star" *ngIf="slide.stars != '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '4'"></i>
+											<i class="i-starm" *ngIf="slide.stars == '4.5'"></i>
+											<i class="i-star" *ngIf="slide.stars == '5'"></i>
+											<span class="qty_reviews f_open color-primary">{{ slide.reviews }} Reviews</span>
+										</div>
+										<div class="team-position">
+											<p style="text-align: justify;">{{ slide.description }}</p>
+											<p class="f_open" *ngIf="slide.price?.length > 0" >{{ slide.price }}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="listing-modules">
+	<div class="container border-bottom-gray">
+		<div class="row mb20">
+			<div class="col-md-12">
+				<div class="title">
+					<h2 class="mb0"><b>Spas</b></h2>
+				</div>
+				<div class="col-sm-12 mb10 p0">
+					<p class="paragraph_3 mb0">Book spa services in your area</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="version2" class="row tab-pane team_layout2 pb15">
+			<div class="text-center">
+				<div class="col-md-12 p0 content-carousel">
+					<div  class="swiper-container carousel" [swiper]="slideConfig" (init)="swiperInit($event)" (reachEnd)="swiperReachEnd($event)" (reachBeginning)="swiperReachBeginning($event)" (slideChange)="swiperSlideChange($event)">
+  						<div class="swiper-wrapper">
+							<div *ngFor="let slide of Spas" class="swiper-slide slide">
+								<div class="col-md-12 team-block">
+									<img class="img img-responsive" src="{{ slide.img }}" alt="team4" width="270" height="278" alt="{{ slide.title }} - Spas" />
+									<div class="team-desc text-left">
+										<div class="team-name text-left mb5"><h3 class="mb0">{{ slide.title }}</h3></div>
+										<div class="rating mb5">
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star"></i>
+											<i class="i-star" *ngIf="slide.stars != '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '3'"></i>
+											<i class="i-starg" *ngIf="slide.stars == '4'"></i>
+											<i class="i-starm" *ngIf="slide.stars == '4.5'"></i>
+											<i class="i-star" *ngIf="slide.stars == '5'"></i>
+											<span class="qty_reviews f_open color-primary">{{ slide.reviews }} Reviews</span>
+										</div>
+										<div class="team-position">
+											<p style="text-align: justify;">{{ slide.description }}</p>
+											<p class="f_open" *ngIf="slide.price?.length > 0" >{{ slide.price }}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="layer-banner-home" class="section-mod pt0 pb0">
+	<div class="container p0 mt70">
+		<div class="valign_middle row">
+			<div class="col-lg-5 col-sm-6 col-xs-12 text-center wow fadeInLeft f-img-post-top" data-wow-duration="1300" data-wow-delay="0.4s">
+				<div class="column-inner mb30">
+					<img src="assets/images/rent-now.jpg" class="img img-responsive m_auto img-services-auto" alt="A new way to reach new clients - Salon Home" width="436" height="227" />
+				</div>
+			</div>
+			<div class="col-lg-7 col-sm-6 col-xs-12 wow fadeInRight s-text-post-top" data-wow-duration="1300" data-wow-delay="0.4s">
+				<div class="column-inner" style="padding-left: 20px;">
+					<h3 style="line-height: initial;" class="mt0 mb20"><strong>Find out how much you could earn renting a chair or space</strong><br />Turn your unused spots into extra profits</h3>
+					<a [routerLink]="['/services-available-spaces']" class="btn theme_btn br2 text-normal size-medium">Rent Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="rent" class="section-mod pb30">
+	<div class="container">
+		<div class="row mb20">
+			<div class="col-md-12">
+				<div class="title">
+					<h2 class="text-center mb10"><b>Rent A Salon, Spa, or Shared Beauty Space</b></h2>
+					<div class="col-sm-12 col-md-6 col-md-offset-3 text-center " data-wow-delay="0.4s">
+						<p class="mb0">Find thousands of business owners renting chairs & spaces.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div id="version2" class="tab-pane team_layout2 col-md-12 layout-team four-layout">
+				<div class="text-center">
+					<div class="col-md-3 col-sm-6 team-block mb30">
+						<img class="img img-responsive" src="assets/images/post/exclusive-hair-studio.jpg" alt="Exclusive Hair Studio in Heart of Astoria" width="270" height="354" />
+						<div class="team-desc text-left">
+							<div class="team-name text-left mb10"><h3>Exclusive Hair Studio in Heart of Astoria</h3></div>
+							<div class="rating mb10">
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+							</div>
+							<div class="team-position height_auto"><p><span class="bmod">10</span>Excellent</p></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 team-block mb30">
+						<img class="img img-responsive" src="assets/images/post/exclusive-massage.jpg" alt="Exclusive Massage in Heart of Astoria" width="270" height="354" />
+						<div class="team-desc text-left">
+							<div class="team-name text-left mb10"><h3>Exclusive Massage in Heart of Astoria</h3></div>
+							<div class="rating mb10">
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+							</div>
+							<div class="team-position height_auto"><p><span class="bmod">10</span>Excellent</p></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 team-block mb30">
+						<img class="img img-responsive" src="assets/images/post/marvelous-nail-table.jpg" alt="Marvelous Nail Table with available" width="270" height="354" />
+						<div class="team-desc text-left">
+							<div class="team-name text-left mb10"><h3>Marvelous Nail Table with available</h3></div>
+							<div class="rating mb10">
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-starg"></i>
+							</div>
+							<div class="team-position height_auto"><p><span class="bmod">0.8</span>Very Good</p></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 team-block mb30">
+						<img class="img img-responsive" src="assets/images/post/chairs-for-barbers.jpg" alt="8 Chair available for local barbers" width="270" height="354" />
+						<div class="team-desc text-left">
+							<div class="team-name text-left mb10"><h3>8 Chair available for local barbers</h3></div>
+							<div class="rating mb10">
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-star"></i>
+								<i class="i-starg"></i>
+								<i class="i-starg"></i>
+							</div>
+							<div class="team-position height_auto"><p><span class="bmod">0.6</span>Good</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section class="section-mod pt0 pb0" id="section_map">
+	<div class="container">
+		<div class="row mb20">
+			<div class="title">
+				<h2 class="text-center mb0" data-wow-delay="0.2s"><b class="mb20">In Your Neighborhood</b></h2>
+				<div class="col-sm-12 col-md-10 col-md-offset-1 text-center " data-wow-delay="0.4s">
+					<p class="mb50">SalonHome is coming to these cities soon. Don’t see your city yet? Contact Us and let us know where <br />we should bring beauty without boundaries</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-opaque_2 c_relative">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12 mt40 mb50">
+				<h3 class="mb0" data-wow-delay="0.2s"><b class="mb20">Find Trusted Professionals by market:</b></h3>
+				<div class="col-sm-12 col-md-12 p0 content-colums_list_4" data-wow-delay="0.4s">
+						
+					<ul class="colums_list_4 mt40 col-md-3 col-sm-6 col-xs-6 p0">
+						<li>Atlanta</li>
+						<li>Baltimore</li>
+						<li>Birmingham</li>
+						<li>Boston</li>
+						<li>Charlotte</li>
+						<li>Chicago</li>
+						<li>Cincinnati</li>
+						<li>Cleveland</li>
+						<li>Dallas</li>
+						<li>Denver</li>						
+						<li>Detroit</li>
+					</ul>
+
+					<ul class="colums_list_4 mt40 col-md-3 col-sm-6 col-xs-6 p0">
+						<li>Greenville</li>
+						<li>Houston</li>
+						<li>Indianapolis</li>
+						<li>Jacksonville</li>
+						<li>Kansas City</li>
+						<li>Las Vegas</li>
+						<li>Los Angeles</li>
+						<li>Memphis</li>
+						<li>Miami</li>
+						<li>Milwaukee</li>
+						<li>Minneapolis</li>
+					</ul>
+					<ul class="colums_list_4 mt40 col-md-3 col-sm-6 col-xs-6 p0">
+						<li>Myrtle Beach</li>
+						<li>Nashville</li>
+						<li>New Jersey</li>
+						<li>New Orleans</li>
+						<li>New York City</li>
+						<li>Orlando</li>
+						<li>Philadelphia</li>
+						<li>Phoenix</li>
+						<li>Pittsburgh</li>
+						<li>Portland</li>
+						<li>Raleigh</li>
+					</ul>
+					<ul class="colums_list_4 mt40 col-md-3 col-sm-6 col-xs-6 p0">
+						<li>Richmond</li>
+						<li>Sacramento</li>
+						<li>Salt Lake City</li>
+						<li>San Antonio</li>
+						<li>San Diego</li>
+						<li>San Francisco</li>
+						<li>Seattle</li>
+						<li>St. Louis</li>
+						<li>Tampa</li>
+						<li>Virginia Beach</li>
+						<li>District of Columbia</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,53 @@
+@media screen and (max-width:1024px){
+.style_menu_1 .style_button_1{padding:5px 10px !important;}
+.banner-section .title h2{margin-bottom:0px;padding-bottom:0px;}
+.banner-section .text_10{font-size:32px;}
+.banner-section.available-spaces .top-01{margin-top:-40px !important;}
+.banner-section .banner-title{padding:0px !important;}
+}
+@media screen and (max-width:768px){
+.black-res, .black-res *{color: #000 !important;}
+.style_menu_1 .style_button_1{font-size:13px !important;}
+.banner-section .text_12{font-size:40px;}
+.banner-section .text_10{font-size:30px;}
+}
+@media screen and (max-width:700px){
+.container-type2 p{font-size:16px;}
+.style_menu_1 .style_button_1{font-size:16px !important;width:48% !important;}
+.style_menu_1 .style_button_1.active:after{display:none !important;}
+.banner-section .no-overlay{height:auto !important;padding-top:170px !important;background-size:auto 170px !important;background-repeat:no-repeat !important;}
+.banner-section .no-overlay:before{content:' ';height:170px;margin-top:62px;display:block;position:absolute;top:0px;z-index:-1;left:0px;width:100%;background-color:#f8f8f8 !important;}
+.banner-section.b-hair .no-overlay{background-position:-8% top !important;}
+.banner-section.b-tanning .no-overlay{background-position:97% top !important;}
+.banner-section.b-makeup .no-overlay{background-position:0% -16px !important;background-size:220% !important;}
+.banner-section.b-massage .no-overlay{background-position:left top !important;}
+.banner-section.b-nails .no-overlay{background-position:0px -21px !important;background-size:280% !important;}
+.banner-section.b-skincare .no-overlay{background-position:right top !important;}
+.banner-section.b-body .no-overlay{background-position:1% top !important;}
+.banner-section.b-bridal .no-overlay{background-position:right -4px !important;background-size:289% !important;}
+.banner-section.b-spaces .no-overlay{background-position:center top !important;background-size:195% !important;}
+.banner-section.b-barbers .no-overlay{background-position:80% top !important;}
+.banner-section .banner-container{padding-top:40px !important;margin-top:0px !important;padding-bottom:40px !important;background:#e2e2e2 !important;}
+.banner-section .text_12{font-size:32px !important;margin-bottom:10px !important;}
+.banner-section .text_10{font-size:22px !important;margin-bottom:10px !important;line-height:initial !important;}
+.banner-section .text_7{font-size:16px !important;}
+.banner-section{padding-bottom:0px !important;}
+.content-services{padding:40px 0px 0px 0px !important;}
+.banner-section .banner-title img{margin-top:40px !important;}
+.s-hair .f-img-post-top img{position:absolute;top:0px;margin-top:160px;width:200px;left:50%;margin-left:-100px;}
+.s-hair .s-text-post-top{padding-bottom:340px;}
+.s-tanning .f-img-post-top img{width:200px;}
+.s-nails .f-img-post-top img{position:absolute;top:0px;margin-top:220px;width:200px;left:50%;margin-left:-100px;}
+.s-nails .s-text-post-top{padding-bottom:340px;}
+.s-makeup .f-img-post-top img{position:absolute;top:0px;margin-top:170px;width:200px;left:50%;margin-left:-100px;}
+.s-makeup .s-text-post-top{padding-bottom:340px;}
+.s-massage .f-img-post-top img{width:200px;}
+.s-skincare .f-img-post-top img{position:absolute;top:0px;margin-top:205px;width:200px;left:50%;margin-left:-100px;}
+.s-skincare .s-text-post-top{padding-bottom:340px;}
+.s-body .f-img-post-top img{position:absolute;top:0px;margin-top:175px;width:200px;left:50%;margin-left:-100px;}
+.s-body .s-text-post-top{padding-bottom:340px;}
+.s-bridal .f-img-post-top img{position:absolute;top:0px;margin-top:195px;width:200px;left:50%;margin-left:-100px;}
+.s-bridal .s-text-post-top{padding-bottom:370px;}
+.s-space .f-img-post-top img{position:absolute;top:0px;margin-top:440px;width:200px;left:50%;margin-left:-100px;}
+.s-space .s-text-post-top{padding-bottom:288px;}
+}
