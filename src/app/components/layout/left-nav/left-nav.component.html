@@ -1,0 +1,48 @@
+<div class="collapse-left-nav p0 bg-primary" id="myNavLeftBar">
+	<a href="javascript:;" class="button-close pull-right"></a>
+	<ul class="nav-lbar pull-right text-right">
+		<li>
+			<a id="join-beta" [routerLink]="['/download']" target="_blank"><span class="btn-special">Get SalonHome</span></a>
+		</li>
+		<li class="parent">
+			<a [routerLink]="['/home']" [routerLinkActive]="['active']" class="option-services-hair">Home</a>
+		</li>
+		<li class="parent type-2">
+			<span class="sub-item">How it Works</span>
+			<div class="sub-menu">
+				<a [routerLink]="['/how-it-works-professionals']" [routerLinkActive]="['active']" class="option-how-it-works-professionals" data-du-smooth-scroll data-du-scrollspy>For Professionals</a>
+				<a [routerLink]="['/how-it-works-clients']" [routerLinkActive]="['active']" class="option-how-it-works-clients" data-du-smooth-scroll data-du-scrollspy>For Clients</a>
+			</div>
+		</li>
+		<li>
+			<a [routerLink]="['/magazine']" [routerLinkActive]="['active']" class="option-magazine">Magazine</a>
+		</li>
+		<li>
+			<a [routerLink]="['/join-our-team']" [routerLinkActive]="['active']" class="option-join-our-team">Join our Team</a>
+		</li>
+		<!-- <li>
+			<a [routerLink]="['/university']" [routerLinkActive]="['active']" class="option-salonhome-university">SalonHome University</a>
+		</li> -->
+		<li>
+			<a [routerLink]="['/events']" [routerLinkActive]="['active']" class="option-events">Events</a>
+		</li>
+		<li class="parent">
+			<span class="sub-item">Services</span>
+			<div class="sub-menu">
+				<a [routerLink]="['/services-hair']" [routerLinkActive]="['active']" class="option-services-hair">Hair</a>
+				<a [routerLink]="['/services-barbers']" [routerLinkActive]="['active']" class="option-services-barbers">Barber</a>
+				<a [routerLink]="['/services-nail']" [routerLinkActive]="['active']" class="option-services-nail">Nail</a>
+				<a [routerLink]="['/services-makeup']" [routerLinkActive]="['active']" class="option-services-makeup">Makeup</a>
+				<a [routerLink]="['/services-massage']" [routerLinkActive]="['active']" class="option-services-massage">Massage</a>
+				<a [routerLink]="['/services-skin']" [routerLinkActive]="['active']" class="option-services-skin">Spa</a>
+				<a [routerLink]="['/services-available-spaces']" [routerLinkActive]="['active']" class="option_available-spaces">Space Rental</a>
+			</div>
+		</li>	
+		<li>
+			<a [routerLink]="['/contact-us']" [routerLinkActive]="['active']" class="option-contact-us">Contact Us</a>
+		</li>
+		<li>
+			<a [routerLink]="['/help']" [routerLinkActive]="['active']" class="option-help">Help</a>
+		</li>
+	</ul>
+</div>

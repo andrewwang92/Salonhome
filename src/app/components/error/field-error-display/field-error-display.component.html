@@ -1,0 +1,5 @@
+<div *ngIf="displayError" >
+  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+  <span class="error help-block">{{ errorMsg }}</span>
+  <span class="error help-block" [innerHTML]="errorMsgHtml"></span>
+</div>
