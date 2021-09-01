@@ -1,0 +1,99 @@
+<div class="wow fadeIn" data-wow-duration="2000" >
+<section class="top-section">
+	<div class="container">
+		<div class="row">
+			<div class="title">
+				<h2 class="text-center"><b class="theme_color">Careers</b></h2>
+				<div class="col-sm-12 col-md-8 col-md-offset-2 text-center mb40">
+					<h5 class="block"><b>We’re hiring! See the positions we are looking to fill below.</b></h5>
+					<p class="mb0">If you want to be part of a fast-paced startup company creating a multitude of mobile products, drop us a line! Complete this application.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mb60">
+			<div class="col-sm-12 col-md-6 col-md-offset-3">
+
+				<p class="text-center">What position are you applying for?</p>
+
+				
+				<div class="layout-form mb20">
+					
+					<form id="form-apply-careers" [formGroup]="form">
+
+	        			<div class="form-group display_control_professional">
+	        				<div class="col-sm-12">
+		        				<label for="field_position" class="select_style">
+		        					<span class="form-control mob_control set">Sales and Account Management</span>
+			        				<select formControlName="position" id="position" class="form-control mob_control action_change_select selectable-texts" >
+			        					<option data-text="Bringing new clients, professionals and partners on board, helping them digitalise their businesses and ensuring that they get the most out of our relationship is a critical and rewarding part of this role." selected>Sales and Account Management</option>
+			        					<option data-text="Using our brand’s creativity and integrated channels, our Marketing Team drives a constant stream of happy and satisfied customers and partners to SalonHome, in the most efficient way possible.">Marketing</option>
+			        					<option data-text="While SalonHome is a beauty business, technology is at the front of the line. The products and services that our professionals provide in the SalonHome marketplace, along with our Partner programs.">Technology</option>
+			        					<option data-text="Most of the Group Function will be held at or our offices in Atlanta. These comprise Finance, HR, Legal, Office Management, and Fraud and Compliance.">Group Functions</option>
+			        					<option data-text="The Customer Care Operation is based out of our Atlanta location. Our main purpose is to be the backbone of our customers, whether that’s taking a call to help someone find their way to their next appointment or space, or making sure that the pages on our site I accurate and professionally for our customers.">Customer Operations</option>
+			        				</select>
+		        				</label>
+	        				</div>
+	        				<div class="col-sm-12">
+	        				<p class="mb0 position-desc">
+								Bringing new clients, professionals and partners on board, helping them digitalise their businesses and ensuring that they get the most out of our relationship is a critical and rewarding part of this role.
+							</p>
+							</div>
+	        			</div>
+
+	        			<div class="form-group" [ngClass]="displayFieldCss('fullname')">
+	        				<div class="col-sm-12">
+	        					<input type="text" formControlName="fullname" id="fullname" placeholder="Full name *" class="form-control mob_control" />
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('fullname')" 
+	        						errorMsg="Please inform your Full Name">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group" [ngClass]="displayFieldCss('phone')">
+	        				<div class="col-sm-12">
+	        					<input type="text" formControlName="phone" id="phone" placeholder="Phone *" class="form-control mob_control numeric" maxlength="15"/>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('phone')" 
+	        						errorMsg="Please inform your Phone">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group" [ngClass]="displayFieldCss('email')">
+	        				<div class="col-sm-12">
+	        					<input type="text" formControlName="email" id="email" placeholder="Email *" class="form-control mob_control" />
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('email')" 
+	        						errorMsg="Please inform your Email">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group">
+	        				<div class="col-sm-12">
+	        					<input type="text" formControlName="linkedin" id="linkedin" placeholder="Linkedin" class="form-control mob_control" />
+	        				</div>
+	        			</div>
+	        			<div class="form-group" [ngClass]="displayFieldCss('message')">
+	        				<div class="col-sm-12">
+	        					<textarea formControlName="message" id="message" placeholder="Tell us why your awesome. Be creative *" class="form-control mob_control"></textarea>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('message')" 
+	        						errorMsg="Please inform your Message">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group">
+	        				<div class="col-sm-12">
+	        					<input type="hidden" name="send_submit_careers" id="send_submit_careers" value="1"/>
+	        					<button (click)="onSubmit()" id="submit_careers" class="btn-submit btn theme_btn tinitial size-big-2 pu80"><b><i class="fa fa-paper-plane"></i> Submit</b></button>
+	        				</div>
+	        			</div>
+	        			<div class="set-response"></div>
+		    		</form>
+		    		
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+</div>

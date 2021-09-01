@@ -1,0 +1,67 @@
+<div class="wow fadeIn" data-wow-duration="2000" >
+	
+	<div *ngIf="!events_post">
+		<p>Loading post...</p>
+	</div>
+		
+	<article *ngFor="let post of events_post">
+
+		<section class="top-section-2" *ngIf="post.better_featured_image.source_url">
+			<div class="container center">
+				<img src="{{post.better_featured_image.source_url}}" alt="{{post.title.rendered}}" class="img img-responsive m_auto"/>
+                <div class="text-block">
+                        <h4>{{post.title.rendered}}<br>
+                            {{post.acf.start_date_time | date: 'fullDate' }}<br>
+                            {{post.acf.venue}}
+                        </h4>
+                      </div>
+            </div>
+		</section>
+
+		<section id="post-{{post.id}}" class="section-mod mt20 pt20">
+			<div class="container">
+				<div class="row">
+                        <div class="col-md-12">
+                        <div class="col-md-4">
+                                <div class="title mb20 wow fadeInUp" data-wow-delay="0.2s">
+                                        <time class="date entry-meta mb10"><i class="fa fa-clock-o" aria-hidden="true"></i> Event Starts at: {{post.acf.start_date_time | date:'shortTime'}}</time>
+                                        <time class="date entry-meta mb10"><i class="fa fa-external-link-square" aria-hidden="true"></i> Official Links <a href="{{post.acf.official_links }}">{{post.acf.official_links }}</a></time>
+                                    </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="title mb20 wow fadeInUp" data-wow-delay="0.2s">
+                                        <time class="date entry-meta mb10"><i class="fa fa-money" aria-hidden="true"></i> Entry Fees {{post.acf.entry_fees }}</time>
+                                        <time class="date entry-meta mb10"><i class="fa fa-bandcamp" aria-hidden="true"></i> Frequency {{post.acf.frequency }}</time>
+                                    </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="title mb20 wow fadeInUp" data-wow-delay="0.2s">
+                                        <time class="date entry-meta mb10"><i class="fa fa-clock-o" aria-hidden="true"></i> Event Ends: {{post.acf.end_date_time }}</time>
+                                        <time class="date entry-meta mb10"><button>Interested</button></time>
+                                    </div>
+                        </div>
+                        
+                    </div>
+                        <div class="col-md-8">
+                            <h3>Exhibition Details</h3>
+                            <div class="wow fadeInUp" data-wow-delay="0.6s" [innerHTML]="post.acf.exhibitors"></div>
+                            <h3>Event Details</h3>
+                         <div class="wow fadeInUp" data-wow-delay="0.6s" [innerHTML]="post.content.rendered"></div>
+                        
+                        </div>
+                        
+					
+					<div class="col-md-4">
+                        <div>
+                            <h4 class="type2-title mb30">Organizers</h4>  
+                 <time class="date entry-meta mb10"><img src="{{ post.acf.organiser_imagelogo.url}}"/> <br>{{post.acf.organizer }}</time>
+                </div>
+						<app-events-recent></app-events-recent>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</article>
+
+</div>

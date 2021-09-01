@@ -1,0 +1,32 @@
+<div class="wow fadeIn" data-wow-duration="2000" >
+		<section class="top-section events-page">
+			<div class="container">
+				<div class="row">
+					<div class="title wow fadeInUp">
+						<h2 class="text-center"><b class="theme_color">SalonHome Events</b></h2>
+						<div class="col-sm-12 col-md-8 col-md-offset-2 text-center mb60 wow fadeIn" data-wow-duration="1500" data-wow-delay="0.2s">
+							<p class="mb0">We’re the world’s leading marketplace for booking beauty services and events.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mb50">
+					<section *ngFor="let post of events_posts" class="inline-blocks">
+						<div class="col-xs-12 col-md-3 col-sm-6 single-post-2 wow fadeInUp" data-wow-delay="0.1s" >
+							<article id="post-{{post.id}}" class="box">
+								<a [routerLink]="['/events', post.slug]" class="routeImg"><img src="{{post.better_featured_image.source_url}}" alt="{{post.title.rendered}}" class="photo" /></a>
+								<div class="description">
+									<h3 class="post-title mt0"><a [routerLink]="['/events', post.slug]" class="color-inherit ease">{{post.title.rendered}}</a></h3>
+									<time class="date entry-meta mb10"><i class="fa fa-clock-o" aria-hidden="true"></i> {{post.acf.start_date_time | date: 'medium' }}  <br> Venue: {{post.acf.venue}} </time>
+									<div class="description-post" [innerHTML]="post.content.rendered">	
+								</div>
+								<a class="btn theme_btn style_outlined" [routerLink]="['/events', post.slug]">Read More</a>
+								</div>
+							</article>
+						</div>
+					</section>
+					<span *ngIf="!events_posts">Loading list...</span>
+				</div>
+		
+			</div>
+		</section>
+		</div>

@@ -1,0 +1,13 @@
+.features_layout .ico {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 38px;
+}
+.features_layout h5 {
+    font-size: 24px;
+}
+.layout_contact_i{padding-top:25px;padding-left:100px;}
+.layout_contact_i .i-img{float:left;margin-right:30px;}
+@media screen and (max-width:700px){
+.layout_contact_i{padding-top:20px;padding-left:25px;padding-right:25px;}
+}

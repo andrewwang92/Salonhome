@@ -1,0 +1,66 @@
+.dl-container {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px)
+.dl-section {
+    padding: 60px 80px 30px;
+    background: #fff !important;
+    height: auto !important;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24), 0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24), 0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24), 0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
+}
+
+.dl-section {
+    margin: 100px 0 0 0;
+    padding: 0 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+@media (min-width: 480px)
+.dl-page__title {
+    color: #3c4245;
+}
+.dl-page__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+@media (min-width: 480px)
+.dl-page__description {
+    color: #3c4245;
+}
+.dl-page__description {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    margin: 0 0 20px;
+    word-wrap: break-word;
+    white-space: pre-line;
+    vertical-align: middle;
+}
+
+.dl-store-link {
+    padding: 0;
+    cursor: pointer;
+}
+
+.dl-store-link__image {
+    width: 200px;
+    height: auto;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.dl-page__description-text {
+    opacity: 0.8;
+}

@@ -1,0 +1,76 @@
+<div class="wow fadeIn" data-wow-duration="2000" >
+<section class="top-section">
+	<div class="container">
+		<div class="row">
+			<div class="title">
+				<h2 class="text-center"><b class="theme_color">Contact us</b></h2>
+			</div>
+			<div class="col-sm-12 col-md-8 col-md-offset-2 text-center mb70">
+				<p class="mb0 ">Our main office is located, in the heart of Atlanta, USA. Send us an email for partnership, buying ads, promotions, general questions or customer support.</p>
+			</div>
+		</div>
+		<div class="row mb40">
+			<div class="col-md-6 col-sm-12 text-justify layout_form">
+				<p class="mb40 text-center">Send us your details below and we will contact you.</p>
+				<div class="row layout-form mb20">
+					<form id="form-contact" [formGroup]="form">
+
+	        			<div class="form-group has-feedback" [ngClass]="displayFieldCss('name')">
+	        				<div class="col-sm-12">
+	        					<input type="text" id="name" formControlName="name" placeholder="Name" class="form-control mob_control" required/>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('name')" 
+	        						errorMsg="Please inform your name">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group has-feedback" [ngClass]="displayFieldCss('email')">
+	        				<div class="col-sm-12">
+	        					<input type="text" id="email" formControlName="email" placeholder="Email address" class="form-control mob_control" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required/>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('email')" 
+	        						errorMsgHtml="Please inform your a valid email.<br />Please inform your email">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group has-feedback" [ngClass]="displayFieldCss('mobile')">
+	        				<div class="col-sm-12">
+	        					<input type="text" id="mobile" formControlName="mobile" placeholder="Mobile" class="numeric form-control mob_control" pattern="[0-9]+" maxlength="15" required/>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('mobile')" 
+	        						errorMsg="Please inform your mobile">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group has-feedback" [ngClass]="displayFieldCss('message')">
+	        				<div class="col-sm-12">
+	        					<textarea id="message" formControlName="message" placeholder="Message" class="form-control mob_control" required></textarea>
+	        					<app-field-error-display 
+	        						[displayError]="isFieldValid('message')" 
+	        						errorMsg="Please inform your message">
+	        					</app-field-error-display>
+	        				</div>
+	        			</div>
+	        			<div class="form-group has-feedback">
+	        				<div class="col-sm-12">
+	        					<input type="hidden" name="Send_Mail_Contact" value="1" />
+	        					<button (click)="onSubmit()" class="btn theme_btn tinitial size-big-2 pu80 btn-submit"><b><i class="fa fa-paper-plane"></i> Send</b></button>
+	        				</div>
+	        			</div>
+	        			
+	        			<div class="set-response"></div>
+	        		</form>	
+
+	        	</div>        		
+			</div>
+			<div class="col-md-6 col-sm-12 layout_contact_i">
+				<p>
+					<img src="assets/images/icons/icon-letter.jpg" alt="" class="i-img">
+					<b>Email Us</b><br />
+					<span><a href="mailto:corporate@salonhome.com">corporate&#64;salonhome&#46;com</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+</div>

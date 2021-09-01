@@ -1,0 +1,22 @@
+.single-post-2 {padding:0px;padding:1%;position:relative;}
+.single-post-2 .box{-webkit-box-shadow:2px 2px 3px 3px rgba(0, 0, 0, 0.10);box-shadow:2px 2px 3px 3px rgba(0, 0, 0, 0.24);}
+.single-post-2 .box a.routeImg{display: block;overflow: hidden;}
+.single-post-2 .post-title{display: block;overflow: hidden;margin-bottom: 10px;}
+.single-post-2 .post-title a{font-size:22px;display:block;line-height:initial;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.single-post-2 .photo{width:100%;}
+.single-post-2 .description{border:1px solid #f5f5f6;padding:20px 20px 25px 20px;}
+.single-post-2 .date{display:block;font-size:16px;margin-bottom:10px;}
+.single-post-2 p{font-size:14px;display:block;min-height:initial;}
+.description-post{height:150px;overflow:hidden;text-overflow:ellipsis;margin-bottom: 15px;}
+.text-block {
+    position: absolute;
+    top: 200px;
+    left: 175px;
+    background-color: black;
+    opacity: 0.8;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+@media only screen and (max-width:767px){.events-page .description-post{height: auto !important;}}
